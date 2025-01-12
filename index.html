@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Vu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">PhamTuanVu</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#about" onclick="toggleMenu();">About me</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Skill</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Projects</a></li>
+            <li><a href="#testimonial" onclick="toggleMenu();">Experiences</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="home">
+        <div class="textBx" >
+            <h2 style="color:bisque ">Hi,im<br><span>Pham Tuan Vu</span></h2>
+            <h3 style="color: bisque;">Im an student<br><marquee width="80%" direction="left" height="100px">
+                Frontend-Backend dev
+                </marquee>
+               </h3>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About me</h2>
+            <br>
+            <br>
+            <h3>I am an student studying in Keuruu Lukio(Highschool) in Finland,and i am an Frontend-Backend dev
+            </h3>
+            <h3>I come from Vietnam,16 years old,i've been coding for 3 years since 2022</h3>
+            <h3>I do freelancing work,web,automatic bot,robot for competition,...</h3>
+            <h3>DM me for collaboration or working:D</h3>
+        </div>
+      
+    </section>
+
+    <section class="services" id="services">
+        <div class="heading white">
+            <h2>Skill</h2>
+            <p>Skills that i've got</p>
+        </div>
+        <div class="content">
+            <div class="servicesBX">
+                <h2>Web design</h2>
+                <p>I can use UI/UX javascript html and css for web decoration or responsive web.</p>
+            </div>
+            <div class="servicesBX">
+                <h2>Web function coding</h2>
+                <p>Login-logout,automatically reply,auto bot,or backend code.</p>
+            </div>
+            <div class="servicesBX">
+                <h2>Language</h2>
+                <p>I can use Finnish,English,litte bit Japanese and Vietnamese.</p>
+            </div>
+            <div class="servicesBX">
+                <h2>Robot and coding experience</h2>
+                <p>I have plenty of robot prizes and many other coding prizes from national,worldwide competition to small competition.</p>
+            </div>
+            <div class="servicesBX">
+                <h2>Code or robot teaching</h2>
+                <p>I can teach u guys code or making robot with adruino too.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="work" id="work">
+        <div class="heading">
+            <h2>Some of my projects</h2>
+        </div>
+        <div class="content">
+            <div class="workBx">
+                <h2><a href="https://phamtuanvu0211.github.io/YenSaoTayNguyenVuNhatMinh/" style="text-decoration: none;" target="_blank">Shallow nest selling website</a></h2>
+            </div>
+            <div class="workBx">
+                <h2><a href="https://phamtuanvu0211.github.io/vuxmusic/" style="text-decoration: none;" target="_blank">Music website</a></h2>
+            </div>
+            <div class="workBx">
+                <h2><a href="https://phamtuanvu0211.github.io/pokemon/" style="text-decoration: none;" target="_blank">Pokemon name searching by callin API</a></h2>
+            </div>
+            <div class="workBx">
+                <h2><a href="https://phamtuanvu0211.github.io/heart/" style="text-decoration: none;" target="_blank">Responsive heart</a></h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial" id="testimonial">
+        <div class="heading">
+            <h2>Experiences</h2>
+            <p>My experiences</p>
+        </div>
+        <div class="content">
+            <div class="testimonialBx">
+                <p>Winning alliances at FirstTech robotics national challenge,<br> Robot champion 2023-2024 FPT CanTho.</p>
+            </div>
+            <div class="testimonialBx">
+                <p>Coder for an robot team ranked 26 in VexIq national competition,<br>Participated in HoChiMinh city coding competition for teenagers.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>
+            By: Pham Tuan Vu</a>
+          </p>
+          <a href="https://www.facebook.com/profile.php?id=100051136733866" target="_blank"><i class="fa fa-facebook" style="color: beige;" ></i></a>
+          <a href="https://www.instagram.com/vu_0211/"><i class="fa fa-instagram" style="color: beige;" style="letter-spacing: 20cm;"></i></a>
+        </div>
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky',window.scrollY > 0);
+        });
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
